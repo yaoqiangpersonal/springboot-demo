@@ -10,16 +10,13 @@ spring:
     password: root123456
   thymeleaf:
     cache: false
-    prefix: classpath:templates/html/
+    prefix: classpath:/templates/
     check-template-location: true
     suffix: .html
     encoding: UTF-8
     mode: HTML5
     servlet:
       content-type: text/html
-  mvc:
-    static-path-pattern: /static/**
-  resources: classpath:/static/**
 
 #服务器设置
 server:

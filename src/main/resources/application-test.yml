@@ -1,6 +1,8 @@
 # DataSource Config
 spring:
   datasource:
+    #禁用webstatFilter,druid配置的filter未初始化在mvc测试会产生空指针异常
+    druid.web-stat-filter.enabled: false
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.h2.Driver
     schema: classpath:db/schema-h2.sql
@@ -18,9 +20,11 @@ spring:
     servlet:
       content-type: text/html
 
+
+
 #服务器设置
 server:
-  port: 8080
+  port: 8081
 multipart:
   maxFileSize: 10Mb
   maxRequestSize: 50Mb
@@ -48,3 +52,9 @@ http:
   socketTimeout: 10000
 #提交请求前测试连接是否可用
   staleConnectionCheckEnabled: true
+
+#mp配置
+mybatis-plus:
+  mapper-locations:
+    - classpath:mybatis/mapper/security/*.xml
+  type-aliases-package: com.example.springbootdemo.security.po

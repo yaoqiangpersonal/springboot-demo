@@ -3,7 +3,7 @@ package com.example.springbootdemo.extend.security;
 import org.springframework.security.core.GrantedAuthority;
 
 /**
- * Created by yangyibo on 17/2/15.
+ * 权限实体
  */
 public class UrlGrantedAuthority implements GrantedAuthority {
 

@@ -66,5 +66,13 @@ public class User implements UserDetails {
         this.authorities = authorities;
     }
 
+    @Override
+    public String getPassword() {
+        return username;
+    }
 
+    @Override
+    public String getUsername() {
+        return password;
+    }
 }

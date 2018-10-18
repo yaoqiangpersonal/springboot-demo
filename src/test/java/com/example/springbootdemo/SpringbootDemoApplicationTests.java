@@ -1,6 +1,8 @@
 package com.example.springbootdemo;
 
 
+import com.example.springbootdemo.security.dao.PermissionDao;
+import com.example.springbootdemo.security.dao.UserDao;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,10 +16,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SpringbootDemoApplicationTests {
 
+	@Autowired
+	private UserDao userDao;
 
 	@Test
 	public void contextLoads() {
-
+		System.out.println(userDao.getByUserName("admin"));
 	}
 
 }

@@ -12,6 +12,7 @@ import java.util.Map;
  * @author lfy
  * 
  */
+
 public class Msg {
 	//状态码   200-成功    404-失败
 	private final int code;
@@ -30,10 +31,25 @@ public class Msg {
 		return new Msg(200,"处理成功！");
 	}
 	
-	public static Msg fail(){
-		return new Msg(404,"处理失败！");
+	public static Msg notFind(){
+		return new Msg(404,"资源找不到！");
 	}
 
+	public static Msg passwordError(){
+		return new Msg(4011,"密码错误！");
+	}
+
+	public static Msg usernameError(){
+		return new Msg(4010,"用户名错误！");
+	}
+
+	public static Msg checkCodeError(){
+		return new Msg(4012,"验证码错误！");
+	}
+
+	public static Msg fail(){
+		return new Msg(500,"处理失败！");
+	}
 
 	public Msg add(final String key,final Object value){
 		extend.put(key, value);

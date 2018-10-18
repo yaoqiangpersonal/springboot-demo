@@ -3,9 +3,9 @@
 <mapper namespace="com.example.springbootdemo.security.dao.UserDao">
     <resultMap id="userMap" type="user">
 		<id property="id" column="id"/>
-		<result property="cnname" column="cnname"/>
 		<result property="username" column="username"/>
 		<result property="password" column="password"/>
+		<result property="cnname" column="cnname"/>
 		<result property="email" column="email"/>
 		<result property="telephone" column="telephone"/>
 		<result property="mobilePhone" column="mobile_phone"/>

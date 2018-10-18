@@ -10,11 +10,13 @@ import java.security.Principal;
 @RestController
 public class UserController {
 
+
 	@RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public Object list(HttpServletRequest request) {
 		return "Get all User";
     }
+
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody

@@ -15,10 +15,9 @@ public class UrlConfigAttribute implements ConfigAttribute {
         this.httpServletRequest = httpServletRequest;
     }
 
-
     @Override
     public String getAttribute() {
-        return null;
+        return "METHOD_" + httpServletRequest.getMethod();
     }
 
     public HttpServletRequest getHttpServletRequest() {

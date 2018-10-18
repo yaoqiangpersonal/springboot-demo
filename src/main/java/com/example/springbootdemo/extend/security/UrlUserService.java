@@ -1,8 +1,9 @@
 package com.example.springbootdemo.extend.security;
 
-
 import com.example.springbootdemo.security.dao.PermissionDao;
 import com.example.springbootdemo.security.dao.UserDao;
+
+
 import com.example.springbootdemo.security.po.Permission;
 import com.example.springbootdemo.security.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,6 @@ public class UrlUserService implements UserDetailsService {
 
     @Autowired
     private UserDao userDao;
-
     @Autowired
     private PermissionDao permissionDao;
 

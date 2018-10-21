@@ -28,7 +28,7 @@ insert  into `sys_role`(`id`,`name`) values (3,'采购');
 /*Data for the table `sys_user` */
 
 insert  into `sys_user`(`id`,`username`,`password`,`cnname`,`re_password`,`history_password`,`email`,`telephone`,`mobile_phone`,`wechat_id`,`skill`,`department_id`,`login_count`) values (1,'admin','a1d83431229cbda302fb33f24276c446','123',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-insert  into `sys_user`(`id`,`username`,`password`,`cnname`,`re_password`,`history_password`,`email`,`telephone`,`mobile_phone`,`wechat_id`,`skill`,`department_id`,`login_count`) values (2,'user','4a66f5fdabd7d64ef3e118f65f231757',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+insert  into `sys_user`(`id`,`username`,`password`,`cnname`,`re_password`,`history_password`,`email`,`telephone`,`mobile_phone`,`wechat_id`,`skill`,`department_id`,`login_count`) values (2,'user','user',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 insert  into `sys_user`(`id`,`username`,`password`,`cnname`,`re_password`,`history_password`,`email`,`telephone`,`mobile_phone`,`wechat_id`,`skill`,`department_id`,`login_count`) values (3,'caigou','4a66f5fdabd7d64ef3e118f65f231757',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*Data for the table `sys_user_role` */

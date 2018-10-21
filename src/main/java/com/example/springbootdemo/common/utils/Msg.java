@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 通用的返回的类
  * 
- * @author lfy
+ * @author yq
  * 
  */
 

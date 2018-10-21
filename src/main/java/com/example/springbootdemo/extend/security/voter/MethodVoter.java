@@ -5,12 +5,9 @@ import org.springframework.security.access.AccessDecisionVoter;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.web.FilterInvocation;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * @Auther: yq

@@ -21,7 +21,7 @@ public class SpringbootDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		System.out.println(userDao.getByUserName("admin"));
+		System.out.println(userDao.getByUserName("user"));
 	}
 
 }

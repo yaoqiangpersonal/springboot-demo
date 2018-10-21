@@ -50,8 +50,8 @@ public class ApplicationTestMVC {
 
     private void paramsCreate() {
         User b = new User();
-        b.setUsername("admin");
-        b.setPassword("admin");
+        b.setUsername("user");
+        b.setPassword("user");
         params = b;
     }
 
